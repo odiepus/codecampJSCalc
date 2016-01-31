@@ -1,0 +1,91 @@
+
+#mother_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background_calc{
+    margin:10px;
+    width:500px;
+    height: 600px;
+    outline: blue ridge;
+    background-color: lightslategray;
+}
+
+#display_screen{
+    margin: 10px;
+    position: relative;
+    left:100px;
+    width:300px;
+    height:40px;
+    background-color: grey;
+    outline-style: inherit;
+}
+
+#display_screen > p{
+    text-align: right;
+    font-size:25px;
+}
+
+button{
+    float: left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*------------START COLUMNS of button position LEFT---------------*/
+
+.column1{ /*---7 4 1---*/
+    left:150px;
+}
+
+.column2{  /*---8 5 2---*/
+    left:180px;
+}
+
+.column3{  /*---9 6 3---*/
+    left:210px;
+}
+
+.column4{  /*---/ x - ---*/
+    left:240px;
+}
+
+/*------------END COLUMNS of button position LEFT---------------*/
+
+
+/*------------START ROW of button position TOP---------------*/
+
+#num7, #num8, #num9, #divide{
+    top: 25px;
+}
+
+#num4, #num5, #num6, #multiply{
+    top: 50px;
+}
+
+#num1, #num2, #num3, #subtract{
+    top: 75px;
+}
+
+#point, #num0, #negative, #addition{
+    top: 100px;
+}
+
+/*------------END ROW of button position TOP---------------*/
+
+#num_equal{
+    left: 330px;
+}
+
+
+
+
+
+
+
+
+

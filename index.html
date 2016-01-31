@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+    <title>Title</title>
+</head>
+
+<body>
+
+<div id="mother_div">
+    <div id="background_calc">
+
+        <div  id="display_screen">
+            <p id="screen">HELLO</p>
+        </div>
+
+        <div id="buttons">
+            <div class="row ">
+                <button class="column1 input"  id="num_7" onclick="the_return.display('7')"  value="7">7</button>
+
+                <button class="column2 input" id="num_8" onclick="the_return.display('8')"  value="8">8</button>
+
+                <button class="column3 input" id="num_9" onclick="the_return.display('9')"  value="9">9</button>
+
+                <button class="column4 input" id="num_divide" onclick="the_return.display('/')"  value="/">/</button>
+            </div>
+
+            <div class="row ">
+                <button class="column1 input" id="num_4"  value="4">4</button>
+
+                <button class="column2 input"  id="num_5"  value="5">5</button>
+
+                <button class="column3 input"  id="num_6"  value="6">6</button>
+
+                <button class="column4 input" id="num_x"  value="x">x</button>
+            </div>
+
+            <div class="row ">
+                <button class="column1 input" id="num_1"  value="1">1</button>
+
+                <button  class="column2 input" id="num_2" value="2">2</button>
+
+                <button class="column3 input"  id="num_3"  value="3">3</button>
+
+                <button class="column4 input"  id="num_-"  value="-">-</button>
+            </div>
+
+            <div class="row"  >
+                <button class="column1 input" id="num_point" value=".">.</button>
+
+                <button class="column2 input" id="num_0"  value="0">0</button>
+
+                <button class="column3 input" id="num_negative"  value="-">(-)</button>
+
+                <button class="column4 input" id="num_+"  value="+">+</button>
+
+            </div>
+
+            <div class="row">
+                <button id="num_equal" onclick="the_return.value();" value="=">=</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="javascript/jFile.js"></script>
+
+</body>
+</html>
