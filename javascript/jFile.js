@@ -5,39 +5,33 @@
 var the_return = (function() {
 
     var input_array = [];
-    var value_array = [];
     var holder = '';
 
 
     function add_to_array_displayscreen(x){
-        input_array = [];
 
-        for (var i = 0; i < input_array.length; i++) {
-            switch (x) {
-                case '/':
-                case 'x':
-                case '-':
-                case '+':
-                    input_array.push(x);
-                    document.getElementById('screen').innerHTML = x;
-                    break;
-                case '=':
-                    input_array.push(x);
-                    document.getElementById('screen').innerHTML = x;
-                    calculate();
-                    break;
-                default:
-
-                    input_array.push(x);
-
-                    input_array.forEach(function () {
-
-                    });
-
-                    document.getElementById('screen').innerHTML = x;
-                    break;
-            }
+        switch (x) {
+            case '/':
+            case 'x':
+            case '-':
+            case '+':
+                input_array.push(holder);
+                holder = '';
+                input_array.push(x);
+                document.getElementById('screen').innerHTML =x;
+                break;
+            case '=':
+                input_array.push(holder);
+                holder = '';
+                input_array.push(x);
+                document.getElementById('screen').innerHTML =x;
+                break;
+            default:
+                holder += x;
+                document.getElementById('screen').innerHTML = holder;
+                break;
         }
+
 
 
 
@@ -62,8 +56,8 @@ var the_return = (function() {
                     value += input_array[i + 1];
                     break;
                 case '=':
-                    holder +=x;
                     document.getElementById('screen').innerHTML = value;
+                    input_array = [];
                     return value;
                 default:
                     return null;
