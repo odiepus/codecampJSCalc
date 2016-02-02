@@ -31,10 +31,6 @@ var the_return = (function() {
                 document.getElementById('screen').innerHTML = holder;
                 break;
         }
-
-
-
-
     }
 
 
@@ -73,9 +69,24 @@ var the_return = (function() {
         calculate();
     }
 
+    function clear(){
+        holder = holder.substring(0, holder.length -1);
+        document.getElementById('screen').innerHTML = holder;
+    }
+
+    function all_clear(){
+        holder = "";
+        input_array = [];
+
+        document.getElementById('screen').innerHTML = '0';
+
+    }
+
     return{
         value : some_function,
-        display : add_to_array_displayscreen
+        display : add_to_array_displayscreen,
+        clear: clear,
+        all_clear: all_clear
 
     }
 

@@ -7,8 +7,8 @@
 
 #background_calc{
     margin:10px;
-    width:500px;
-    height: 600px;
+    width:450px;
+    height: 250px;
     outline: blue ridge;
     background-color: lightslategray;
 }
@@ -16,8 +16,8 @@
 #display_screen{
     margin: 10px;
     position: relative;
-    left:100px;
-    width:300px;
+    left:95px;
+    width:250px;
     height:40px;
     background-color: grey;
     outline-style: inherit;
@@ -54,7 +54,15 @@ button{
     left:240px;
 }
 
-/*------------END COLUMNS of button position LEFT---------------*/
+.last_row_column3{
+    left:270px;
+}
+
+.last_row_column4{
+    left:300px;
+}
+
+    /*------------END COLUMNS of button position LEFT---------------*/
 
 
 /*------------START ROW of button position TOP---------------*/
@@ -71,15 +79,13 @@ button{
     top: 75px;
 }
 
-#point, #num0, #negative, #addition{
+#point, #num0, #num_equal, #addition{
     top: 100px;
 }
 
 /*------------END ROW of button position TOP---------------*/
 
-#num_equal{
-    left: 330px;
-}
+
 
 
 
