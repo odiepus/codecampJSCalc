@@ -1,16 +1,18 @@
 
 #mother_div{
+    min-height:800px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: grey;
 }
 
 #background_calc{
+
     margin:10px;
     width:450px;
     height: 250px;
-    outline: blue ridge;
-    background-color: lightslategray;
+    background: url("../img/Black_Background_Set_Metal_Hole_by_iAmFreeman.jpg")
 }
 
 #display_screen{
@@ -26,6 +28,7 @@
 #display_screen > p{
     text-align: right;
     font-size:25px;
+    color:black;
 }
 
 button{
@@ -33,6 +36,9 @@ button{
     position: relative;
     width: 30px;
     height: 30px;
+    background: url("../img/metal-background11.jpg");
+
+
 }
 
 
